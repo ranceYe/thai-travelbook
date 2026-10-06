@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#faf6ef">
+<title>泰国旅行手册 · 制作中</title>
+<style>
+  :root{
+    --bg:#faf6ef; --ink:#2f2a24; --muted:#8a8177; --line:#ddd3c4; --accent:#c96f4a;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#17161a; --ink:#ece7e0; --muted:#9a938a; --line:#332f39; --accent:#e08a63; }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif;
+    display:flex; align-items:center; justify-content:center; padding:28px;
+    -webkit-font-smoothing:antialiased;
+  }
+  main{max-width:440px; width:100%; text-align:center}
+  .kicker{font-size:12px; letter-spacing:.28em; color:var(--muted); text-transform:uppercase; margin-bottom:18px}
+  h1{margin:0 0 6px; font-size:26px; font-weight:600; letter-spacing:.02em}
+  .sub{color:var(--muted); font-size:14px; margin-bottom:26px}
+  svg{width:100%; height:auto; display:block; margin:0 0 22px}
+  .status{
+    display:inline-flex; align-items:center; gap:9px;
+    border:1px solid var(--line); border-radius:999px;
+    padding:9px 16px; font-size:13px; color:var(--muted); background:transparent;
+  }
+  .dot{width:7px; height:7px; border-radius:50%; background:var(--accent); animation:pulse 1.8s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1; transform:scale(1)} 50%{opacity:.35; transform:scale(.8)}}
+  footer{margin-top:30px; font-size:12px; color:var(--muted); line-height:1.7}
+</style>
+</head>
+<body>
+<main>
+  <div class="kicker">Thailand Travel Book</div>
+  <h1>曼谷 · 清迈</h1>
+  <div class="sub">6 天 · 2 人</div>
+
+  <svg viewBox="0 0 440 90" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M8 68 C 90 68, 120 22, 200 22 S 330 62, 404 26"
+          stroke="var(--line)" stroke-width="2" stroke-linecap="round"
+          stroke-dasharray="7 8"/>
+    <circle cx="8" cy="68" r="5" fill="var(--accent)"/>
+    <circle cx="404" cy="26" r="5" fill="none" stroke="var(--accent)" stroke-width="2"/>
+    <g transform="translate(200 22) rotate(-16)">
+      <path d="M0 0 L16 5 L0 10 L4 5 Z" fill="var(--ink)"/>
+    </g>
+  </svg>
+
+  <div class="status"><span class="dot"></span>行程手册制作中</div>
+
+  <footer>机票、酒店确认后即更新为完整手册<br>此页无需登录，直接分享即可查看</footer>
+</main>
+</body>
+</html>
